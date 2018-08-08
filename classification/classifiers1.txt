@@ -1,0 +1,63 @@
+
+Options: -F 3 -N 2.0 -O 2 -S 1 
+
+JRIP rules:
+===========
+
+(at8 >= 143.25778) and (at6 <= 20.549747) => Class=con (14.0/1.0)
+(at8 <= 41.514722) and (at2 >= 0.058119) and (at2 <= 0.165806) => Class=gla (19.0/5.0)
+(at2 >= 0.187448) => Class=car (21.0/3.0)
+ => Class=adi (52.0/32.0)
+
+Number of Rules : 4
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          65               61.3208 %
+Incorrectly Classified Instances        41               38.6792 %
+Kappa statistic                          0.5251
+Mean absolute error                      0.1655
+Root mean squared error                  0.2876
+Relative absolute error                 59.8855 %
+Root relative squared error             77.3969 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 18  0  0  0  0  3 |  a = car
+  1  0  0  1  0 13 |  b = fad
+  1  0  0  4  0 13 |  c = mas
+  0  0  0 14  0  2 |  d = gla
+  0  0  0  0 13  1 |  e = con
+  1  0  0  0  1 20 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          60               56.6038 %
+Incorrectly Classified Instances        46               43.3962 %
+Kappa statistic                          0.4699
+Mean absolute error                      0.1749
+Root mean squared error                  0.3243
+Relative absolute error                 63.2257 %
+Root relative squared error             87.1518 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 18  0  1  0  0  2 |  a = car
+  2  0  4  3  0  6 |  b = fad
+  4  3  2  5  0  4 |  c = mas
+  1  0  2  9  0  4 |  d = gla
+  0  0  0  0 12  2 |  e = con
+  1  0  0  1  1 19 |  f = adi
+

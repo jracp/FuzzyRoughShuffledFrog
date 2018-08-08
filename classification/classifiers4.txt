@@ -1,0 +1,93 @@
+
+Options: -C 0.25 -M 2 
+
+J48 pruned tree
+------------------
+
+at6 <= 18.318588
+|   at8 <= 155.322285
+|   |   at8 <= 19.773813
+|   |   |   at2 <= 0.132645: gla (9.0/1.0)
+|   |   |   at2 > 0.132645
+|   |   |   |   at3 <= 0.21293: mas (2.0)
+|   |   |   |   at3 > 0.21293: gla (2.0)
+|   |   at8 > 19.773813
+|   |   |   at3 <= 0.124267
+|   |   |   |   at3 <= 0.043284
+|   |   |   |   |   at8 <= 48.512974
+|   |   |   |   |   |   at2 <= 0.084125: gla (2.0)
+|   |   |   |   |   |   at2 > 0.084125: mas (2.0)
+|   |   |   |   |   at8 > 48.512974
+|   |   |   |   |   |   at8 <= 62.771703: fad (5.0/1.0)
+|   |   |   |   |   |   at8 > 62.771703: mas (5.0)
+|   |   |   |   at3 > 0.043284
+|   |   |   |   |   at2 <= 0.10472: fad (6.0)
+|   |   |   |   |   at2 > 0.10472
+|   |   |   |   |   |   at3 <= 0.086568: gla (4.0/1.0)
+|   |   |   |   |   |   at3 > 0.086568: fad (3.0/1.0)
+|   |   |   at3 > 0.124267: mas (6.0/1.0)
+|   at8 > 155.322285: con (12.0/1.0)
+at6 > 18.318588
+|   at2 <= 0.127409
+|   |   at2 <= 0.079149: adi (14.0)
+|   |   at2 > 0.079149
+|   |   |   at3 <= 0.094248: con (3.0)
+|   |   |   at3 > 0.094248: adi (6.0)
+|   at2 > 0.127409
+|   |   at8 <= 62.771703: fad (2.0/1.0)
+|   |   at8 > 62.771703: car (23.0/3.0)
+
+Number of Leaves  : 	17
+
+Size of the tree : 	33
+
+
+Time taken to build model: 0.02 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          96               90.566  %
+Incorrectly Classified Instances        10                9.434  %
+Kappa statistic                          0.8863
+Mean absolute error                      0.0506
+Root mean squared error                  0.1591
+Relative absolute error                 18.328  %
+Root relative squared error             42.8174 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 20  0  0  1  0  0 |  a = car
+  0 13  1  1  0  0 |  b = fad
+  2  2 14  0  0  0 |  c = mas
+  0  1  0 15  0  0 |  d = gla
+  0  0  0  0 14  0 |  e = con
+  1  0  0  0  1 20 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          65               61.3208 %
+Incorrectly Classified Instances        41               38.6792 %
+Kappa statistic                          0.5329
+Mean absolute error                      0.1375
+Root mean squared error                  0.3192
+Relative absolute error                 49.7204 %
+Root relative squared error             85.7801 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 18  1  1  0  0  1 |  a = car
+  1  6  6  2  0  0 |  b = fad
+  4  7  3  4  0  0 |  c = mas
+  0  1  5 10  0  0 |  d = gla
+  0  0  0  0 11  3 |  e = con
+  1  0  1  0  3 17 |  f = adi
+

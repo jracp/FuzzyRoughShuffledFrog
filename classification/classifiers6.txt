@@ -1,0 +1,101 @@
+
+Options: -I 15 -F 0 -M 15 -W 0.0 
+
+FT tree 
+------------------
+: FT_1:15/15 (106)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+FT_1:
+Class 0 :
+-7.9 + 
+[at2] * 50.67 +
+[at3] * -6.64 +
+[at6] * 0.05 +
+[at8] * 0   
+
+Class 1 :
+3.57 + 
+[at2] * -5.28 +
+[at3] * -2.32 +
+[at8] * -0.04
+
+Class 2 :
+1.29 + 
+[at2] * 6.19 +
+[at3] * 3.22 +
+[at6] * -0.02 +
+[at8] * -0.02
+
+Class 3 :
+3.83 + 
+[at2] * 3.33 +
+[at3] * -1.12 +
+[at6] * -0.05 +
+[at8] * -0.06
+
+Class 4 :
+-0.78 + 
+[at2] * -16.15 +
+[at3] * -1.26 +
+[at6] * -0.02 +
+[at8] * 0.01
+
+Class 5 :
+0.95 + 
+[at2] * -91.14 +
+[at6] * 0.21 +
+[at8] * 0   
+
+
+Time taken to build model: 0.1 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          79               74.5283 %
+Incorrectly Classified Instances        27               25.4717 %
+Kappa statistic                          0.6927
+Mean absolute error                      0.1242
+Root mean squared error                  0.2412
+Relative absolute error                 44.9461 %
+Root relative squared error             64.8994 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 19  0  2  0  0  0 |  a = car
+  1  7  3  4  0  0 |  b = fad
+  2  6  7  3  0  0 |  c = mas
+  0  2  2 12  0  0 |  d = gla
+  0  0  0  0 13  1 |  e = con
+  0  0  0  0  1 21 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          73               68.8679 %
+Incorrectly Classified Instances        33               31.1321 %
+Kappa statistic                          0.6244
+Mean absolute error                      0.136 
+Root mean squared error                  0.2639
+Relative absolute error                 49.1519 %
+Root relative squared error             70.9207 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 18  0  3  0  0  0 |  a = car
+  1  6  3  5  0  0 |  b = fad
+  2  5  5  6  0  0 |  c = mas
+  1  2  1 12  0  0 |  d = gla
+  0  0  0  0 12  2 |  e = con
+  0  1  0  0  1 20 |  f = adi
+

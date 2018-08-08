@@ -1,0 +1,196 @@
+
+NBTree
+------------------
+
+at2 <= 0.123046
+|   at6 <= 18.07517
+|   |   at3 <= 0.034209: NB 3
+|   |   at3 > 0.034209: NB 4
+|   at6 > 18.07517: NB 5
+at2 > 0.123046
+|   at3 <= 0.166155: NB 7
+|   at3 > 0.166155: NB 8
+
+Leaf number: 3 Naive Bayes Classifier
+
+                         Class
+Attribute                  car    fad    mas    gla    con    adi
+                        (0.04) (0.17) (0.35) (0.13) (0.26) (0.04)
+==================================================================
+at2
+  'All'                     1.0    4.0    8.0    3.0    6.0    1.0
+  [total]                   1.0    4.0    8.0    3.0    6.0    1.0
+
+at3
+  'All'                     1.0    4.0    8.0    3.0    6.0    1.0
+  [total]                   1.0    4.0    8.0    3.0    6.0    1.0
+
+at6
+  'All'                     1.0    4.0    8.0    3.0    6.0    1.0
+  [total]                   1.0    4.0    8.0    3.0    6.0    1.0
+
+at8
+  '(-inf-142.953919]'       1.0    4.0    8.0    3.0    1.0    1.0
+  '(142.953919-inf)'        1.0    1.0    1.0    1.0    6.0    1.0
+  [total]                   2.0    5.0    9.0    4.0    7.0    2.0
+
+
+
+Leaf number: 4 Naive Bayes Classifier
+
+                         Class
+Attribute                  car    fad    mas    gla    con    adi
+                        (0.04) (0.36) (0.07) (0.21) (0.25) (0.07)
+==================================================================
+at2
+  'All'                     1.0   10.0    2.0    6.0    7.0    2.0
+  [total]                   1.0   10.0    2.0    6.0    7.0    2.0
+
+at3
+  'All'                     1.0   10.0    2.0    6.0    7.0    2.0
+  [total]                   1.0   10.0    2.0    6.0    7.0    2.0
+
+at6
+  'All'                     1.0   10.0    2.0    6.0    7.0    2.0
+  [total]                   1.0   10.0    2.0    6.0    7.0    2.0
+
+at8
+  '(-inf-102.192299]'       1.0   10.0    1.0    6.0    1.0    1.0
+  '(102.192299-inf)'        1.0    1.0    2.0    1.0    7.0    2.0
+  [total]                   2.0   11.0    3.0    7.0    8.0    3.0
+
+
+
+Leaf number: 5 Naive Bayes Classifier
+
+                Class
+Attribute         car    fad    mas    gla    con    adi
+               (0.03) (0.03) (0.03) (0.03) (0.14) (0.72)
+=========================================================
+at2
+  'All'            1.0    1.0    1.0    1.0    4.0   21.0
+  [total]          1.0    1.0    1.0    1.0    4.0   21.0
+
+at3
+  'All'            1.0    1.0    1.0    1.0    4.0   21.0
+  [total]          1.0    1.0    1.0    1.0    4.0   21.0
+
+at6
+  'All'            1.0    1.0    1.0    1.0    4.0   21.0
+  [total]          1.0    1.0    1.0    1.0    4.0   21.0
+
+at8
+  'All'            1.0    1.0    1.0    1.0    4.0   21.0
+  [total]          1.0    1.0    1.0    1.0    4.0   21.0
+
+
+
+Leaf number: 7 Naive Bayes Classifier
+
+                        Class
+Attribute                 car    fad    mas    gla    con    adi
+                        (0.3) (0.13) (0.23) (0.27) (0.03) (0.03)
+=================================================================
+at2
+  '(-inf-0.149924]'        2.0    1.0    4.0    8.0    1.0    1.0
+  '(0.149924-inf)'         8.0    4.0    4.0    1.0    1.0    1.0
+  [total]                 10.0    5.0    8.0    9.0    2.0    2.0
+
+at3
+  'All'                    9.0    4.0    7.0    8.0    1.0    1.0
+  [total]                  9.0    4.0    7.0    8.0    1.0    1.0
+
+at6
+  '(-inf-20.258836]'       2.0    4.0    5.0    8.0    1.0    1.0
+  '(20.258836-inf)'        8.0    1.0    3.0    1.0    1.0    1.0
+  [total]                 10.0    5.0    8.0    9.0    2.0    2.0
+
+at8
+  '(-inf-64.156514]'       1.0    4.0    6.0    7.0    1.0    1.0
+  '(64.156514-inf)'        9.0    1.0    2.0    2.0    1.0    1.0
+  [total]                 10.0    5.0    8.0    9.0    2.0    2.0
+
+
+
+Leaf number: 8 Naive Bayes Classifier
+
+                            Class
+Attribute                     car    fad    mas    gla    con    adi
+                           (0.54) (0.04) (0.19) (0.12) (0.04) (0.08)
+=====================================================================
+at2
+  'All'                       14.0    1.0    5.0    3.0    1.0    2.0
+  [total]                     14.0    1.0    5.0    3.0    1.0    2.0
+
+at3
+  'All'                       14.0    1.0    5.0    3.0    1.0    2.0
+  [total]                     14.0    1.0    5.0    3.0    1.0    2.0
+
+at6
+  '(-inf-4.091739]'            1.0    1.0    1.0    3.0    1.0    1.0
+  '(4.091739-15.484875]'       1.0    1.0    4.0    1.0    1.0    1.0
+  '(15.484875-inf)'           14.0    1.0    2.0    1.0    1.0    2.0
+  [total]                     16.0    3.0    7.0    5.0    3.0    4.0
+
+at8
+  '(-inf-57.418931]'           1.0    1.0    4.0    3.0    1.0    1.0
+  '(57.418931-inf)'           14.0    1.0    2.0    1.0    1.0    2.0
+  [total]                     15.0    2.0    6.0    4.0    2.0    3.0
+
+
+
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Time taken to build model: 0.18 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          83               78.3019 %
+Incorrectly Classified Instances        23               21.6981 %
+Kappa statistic                          0.7378
+Mean absolute error                      0.1429
+Root mean squared error                  0.2447
+Relative absolute error                 51.7091 %
+Root relative squared error             65.8525 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 20  0  0  1  0  0 |  a = car
+  0 12  3  0  0  0 |  b = fad
+  2  2 11  2  1  0 |  c = mas
+  0  5  2  9  0  0 |  d = gla
+  0  0  0  0 11  3 |  e = con
+  1  0  0  0  1 20 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          58               54.717  %
+Incorrectly Classified Instances        48               45.283  %
+Kappa statistic                          0.4537
+Mean absolute error                      0.1857
+Root mean squared error                  0.3161
+Relative absolute error                 67.1309 %
+Root relative squared error             84.9581 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 18  0  1  1  0  1 |  a = car
+  1  5  8  1  0  0 |  b = fad
+  3  3  3  7  2  0 |  c = mas
+  0  6  2  7  0  1 |  d = gla
+  0  1  1  0 10  2 |  e = con
+  3  0  1  0  3 15 |  f = adi
+

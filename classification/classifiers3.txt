@@ -1,0 +1,68 @@
+
+Options: -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=5 #classindex=4
+Network structure (nodes followed by parents)
+at2(4): Class 
+at3(2): Class 
+at6(3): Class 
+at8(4): Class 
+Class(6): 
+LogScore Bayes: -497.9304478438721
+LogScore BDeu: -651.1799268221953
+LogScore MDL: -637.0745870216064
+LogScore ENTROPY: -499.5031337453004
+LogScore AIC: -558.5031337453004
+
+
+Time taken to build model: 0.02 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          79               74.5283 %
+Incorrectly Classified Instances        27               25.4717 %
+Kappa statistic                          0.6928
+Mean absolute error                      0.1219
+Root mean squared error                  0.2412
+Relative absolute error                 44.1135 %
+Root relative squared error             64.9088 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 20  0  1  0  0  0 |  a = car
+  1 11  3  0  0  0 |  b = fad
+  2  4  8  4  0  0 |  c = mas
+  0  7  1  8  0  0 |  d = gla
+  0  0  0  0 12  2 |  e = con
+  0  0  0  0  2 20 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          65               61.3208 %
+Incorrectly Classified Instances        41               38.6792 %
+Kappa statistic                          0.5344
+Mean absolute error                      0.1626
+Root mean squared error                  0.2941
+Relative absolute error                 58.7673 %
+Root relative squared error             79.0284 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 18  0  0  2  0  1 |  a = car
+  1  9  1  4  0  0 |  b = fad
+  3  8  2  4  1  0 |  c = mas
+  0  6  3  7  0  0 |  d = gla
+  0  0  0  0 11  3 |  e = con
+  0  1  1  1  1 18 |  f = adi
+

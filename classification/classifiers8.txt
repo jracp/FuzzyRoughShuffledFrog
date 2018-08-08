@@ -1,0 +1,93 @@
+
+Options: -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1 
+
+Radial basis function network
+(Logistic regression applied to K-means clusters as basis functions):
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                 Class
+Variable                           car                     fad                     mas                     gla                     con
+======================================================================================================================================
+pCluster_0_0                 4175.2332               2130.0078                524.8934               -188.5106               -210.0522
+pCluster_0_1                 4175.6328               -285.3843                524.2078               -210.1024               -309.6244
+pCluster_1_0                 4053.8395               3329.9409               1723.1988               1020.3476                818.3424
+pCluster_1_1                 4091.1847               2087.2202                469.9791               -236.4431              -2544.2909
+pCluster_2_0                 4209.8044               2081.2427                551.7179               -242.6277                328.9232
+pCluster_2_1                 5073.9702               3024.8316               1428.1275                714.6645                667.2927
+pCluster_3_0                   4619.32               2132.9028                585.9323               -127.3154                341.7093
+pCluster_3_1                 5809.1161               3744.9543               2155.1165                1441.059                772.9943
+pCluster_4_0               -26660.4199               2409.7363                 711.474               -267.2272                558.4303
+pCluster_4_1                 1654.4313                2041.072                493.2119               -201.7583                316.5349
+pCluster_5_0                -1824.5215              -11230.197              -4587.3597               -222.2882                292.3874
+pCluster_5_1                -2013.5873               2080.7576                  286.12               -415.8575                302.1804
+Intercept                    -4149.681               -2096.884               -500.9503                210.8468               -312.5339
+
+
+Odds Ratios...
+                                 Class
+Variable                           car                     fad                     mas                     gla                     con
+======================================================================================================================================
+pCluster_0_0                  Infinity                Infinity   9.084888259699587E227                       0                       0
+pCluster_0_1                  Infinity                       0   4.576620698738782E227                       0                       0
+pCluster_1_0                  Infinity                Infinity                Infinity                Infinity                Infinity
+pCluster_1_1                  Infinity                Infinity  1.2862692575623114E204                       0                       0
+pCluster_2_0                  Infinity                Infinity   4.055618253428565E239                       0   7.072153288443827E142
+pCluster_2_1                  Infinity                Infinity                Infinity                Infinity   6.332014387834694E289
+pCluster_3_0                  Infinity                Infinity   2.931918563997288E254                       0   2.526090539916175E148
+pCluster_3_1                  Infinity                Infinity                Infinity                Infinity                Infinity
+pCluster_4_0                         0                Infinity                Infinity                       0  3.3356635228917583E242
+pCluster_4_1                  Infinity                Infinity  1.5819973083041404E214                       0  2.9469649813852833E137
+pCluster_5_0                         0                       0                       0                       0   9.599284810451698E126
+pCluster_5_1                         0                Infinity  1.8210373015692046E124                       0  1.7190631497405307E131
+
+
+Time taken to build model: 2.83 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          97               91.5094 %
+Incorrectly Classified Instances         9                8.4906 %
+Kappa statistic                          0.8976
+Mean absolute error                      0.0576
+Root mean squared error                  0.1598
+Relative absolute error                 20.835  %
+Root relative squared error             43.0111 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 21  0  0  0  0  0 |  a = car
+  0 13  2  0  0  0 |  b = fad
+  2  0 13  3  0  0 |  c = mas
+  0  1  0 15  0  0 |  d = gla
+  0  0  0  0 14  0 |  e = con
+  0  0  0  0  1 21 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          65               61.3208 %
+Incorrectly Classified Instances        41               38.6792 %
+Kappa statistic                          0.5328
+Mean absolute error                      0.1403
+Root mean squared error                  0.3341
+Relative absolute error                 50.7066 %
+Root relative squared error             89.7774 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 16  1  3  0  1  0 |  a = car
+  0  5  8  2  0  0 |  b = fad
+  3  6  7  1  0  1 |  c = mas
+  1  3  3  7  2  0 |  d = gla
+  0  0  0  0 11  3 |  e = con
+  1  0  0  0  2 19 |  f = adi
+

@@ -1,0 +1,79 @@
+
+Options: -S 1 -M 2 -N 5 -C 1.0 -P POSTPRUNED 
+
+Best-First Decision Tree
+
+at2 < 0.18518
+|  at6 < 18.58819
+|  |  at8 < 157.8446
+|  |  |  at8 < 20.26686: gla(10.0/3.0)
+|  |  |  at8 >= 20.26686
+|  |  |  |  at3 < 0.12811
+|  |  |  |  |  at3 < 0.05969: mas(8.0/7.0)
+|  |  |  |  |  at3 >= 0.05969
+|  |  |  |  |  |  at2 < 0.10489: fad(6.0/0.0)
+|  |  |  |  |  |  at2 >= 0.10489: gla(4.0/2.0)
+|  |  |  |  at3 >= 0.12811: mas(5.0/1.0)
+|  |  at8 >= 157.8446
+|  |  |  at2 < 0.03752: con(1.0/1.0)
+|  |  |  at2 >= 0.03752: con(10.0/0.0)
+|  at6 >= 18.58819
+|  |  at2 < 0.13134: adi(20.0/3.0)
+|  |  at2 >= 0.13134
+|  |  |  at6 < 21.35552: car(2.0/0.0)
+|  |  |  at6 >= 21.35552: mas(2.0/0.0)
+at2 >= 0.18518: car(18.0/3.0)
+
+Size of the Tree: 21
+
+Number of Leaf Nodes: 11
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          86               81.1321 %
+Incorrectly Classified Instances        20               18.8679 %
+Kappa statistic                          0.7713
+Mean absolute error                      0.0951
+Root mean squared error                  0.218 
+Relative absolute error                 34.4146 %
+Root relative squared error             58.6725 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 20  0  1  0  0  0 |  a = car
+  1  6  5  3  0  0 |  b = fad
+  1  0 15  2  0  0 |  c = mas
+  0  0  2 14  0  0 |  d = gla
+  0  0  0  0 11  3 |  e = con
+  1  0  0  0  1 20 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          63               59.434  %
+Incorrectly Classified Instances        43               40.566  %
+Kappa statistic                          0.5118
+Mean absolute error                      0.1456
+Root mean squared error                  0.3202
+Relative absolute error                 52.6201 %
+Root relative squared error             86.0474 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 17  1  2  0  0  1 |  a = car
+  1  7  4  3  0  0 |  b = fad
+  3 11  1  2  0  1 |  c = mas
+  0  4  3  9  0  0 |  d = gla
+  0  0  0  0 12  2 |  e = con
+  1  0  0  1  3 17 |  f = adi
+

@@ -1,0 +1,83 @@
+
+Options: -M 2 -C 0.25 -Q 1 
+
+PART decision list
+------------------
+
+at6 > 18.318588 AND
+at2 <= 0.127409 AND
+at2 <= 0.079149: adi (14.0)
+
+at8 <= 87.62118 AND
+at6 > 15.670203 AND
+at3 > 0.08238 AND
+at3 <= 0.165457: mas (3.0)
+
+at6 > 20.549747 AND
+at2 > 0.132645: car (21.0/2.0)
+
+at8 > 142.496468 AND
+at3 <= 0.163363: con (16.0/2.0)
+
+at6 > 29.910803: adi (5.0)
+
+at6 > 15.670203 AND
+at2 > 0.132645: car (3.0/1.0)
+
+at8 <= 19.773813 AND
+at2 <= 0.132645: gla (9.0/1.0)
+
+: mas (35.0/21.0)
+
+Number of Rules  : 	8
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          79               74.5283 %
+Incorrectly Classified Instances        27               25.4717 %
+Kappa statistic                          0.691 
+Mean absolute error                      0.104 
+Root mean squared error                  0.228 
+Relative absolute error                 37.6387 %
+Root relative squared error             61.3593 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 21  0  0  0  0  0 |  a = car
+  1  0 13  1  0  0 |  b = fad
+  1  0 17  0  0  0 |  c = mas
+  0  0  8  8  0  0 |  d = gla
+  0  0  0  0 14  0 |  e = con
+  1  0  0  0  2 19 |  f = adi
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          64               60.3774 %
+Incorrectly Classified Instances        42               39.6226 %
+Kappa statistic                          0.523 
+Mean absolute error                      0.1445
+Root mean squared error                  0.3248
+Relative absolute error                 52.2446 %
+Root relative squared error             87.2975 %
+Total Number of Instances              106     
+
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 18  1  1  1  0  0 |  a = car
+  3  6  4  2  0  0 |  b = fad
+  4  7  2  5  0  0 |  c = mas
+  0  3  3 10  0  0 |  d = gla
+  0  0  0  0 12  2 |  e = con
+  1  0  0  0  5 16 |  f = adi
+
