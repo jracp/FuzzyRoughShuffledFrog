@@ -20,7 +20,7 @@ To compile this program follow these steps:
 To run the program use `./SFLA /Data/{a dataset name}OK.csv {maximum number of stalled} {number of threads} {maximum iteration}`
 For instance, run the code for Breast Tissue dataset with maximum three stall situations, four threads for 10 times, it should be run using: `./SFLA /Data/BreastTissueOK.csv 3 4 10`
 
-All datasets are stored in *Data* folder and originally adopted from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php). The one with OK in their names are those 
+All datasets are stored in *Data* folder and originally adopted from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
 
 ## Note
 Datasets end with *OK.csv* in their names should have no column and/or row names, and the class values should be numeric and sorted in ascending order. The ones ending with *W.csv* should have columns name and the class values should be alphabetical.
