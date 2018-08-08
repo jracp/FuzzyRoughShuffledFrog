@@ -5,7 +5,9 @@ date: '08/08/18'
 ---
 
 ## Use case
-To determine the most important features using binary Fuzzy-Rough Shuffled Frog Leaping Algorithm as described in [A Fuzzy-Rough Feature Selection based on Binary Shuffled Frog Leaping Algorithm](https://waset.org/conference/2018/09/vancouver/ICFIE) By Javad Rahimipour Anaraki, Saeed Samet, Mahdi Eftekhari, Chang Wook Ahn
+To determine the most important features using binary Fuzzy-Rough Shuffled Frog Leaping Algorithm as described in [A Fuzzy-Rough Feature Selection based on Binary Shuffled Frog Leaping Algorithm](https://waset.org/conference/2018/09/vancouver/ICFIE) By Javad Rahimipour Anaraki, Saeed Samet, Mahdi Eftekhari and Chang Wook Ahn
+
+Complete version of the paper can be accessed in [A Fuzzy-Rough based Binary Shuffled Frog Leaping Algorithm for Feature Selection](https://arxiv.org/abs/1808.00068)
 
 ## Compile
 This code can be run using MATLAB R2006a and above
