@@ -18,7 +18,7 @@ To compile this program follow these steps:
 
 ## Run
 To run the program use `./SFLA /Data/{a dataset name}OK.csv {maximum number of stalled} {number of threads} {maximum iteration}`
-For instance, run the code for Breast Tissue dataset with maximum three stall situations, four threads for 10 times, it should be run using: `./SFLA /Data/BreastTissueOK.csv 3 4 10` . The classification results will be stored in *classification* folder and 
+For instance, run the code for Breast Tissue dataset with maximum three stall situations, four threads for 10 times, it should be run using: `./SFLA /Data/BreastTissueOK.csv 3 4 10` . The classification results will be stored in *classification* folder and the convergence process is stored in *results* folder.
 
 All datasets are stored in *data* folder and originally adopted from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
 
