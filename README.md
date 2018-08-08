@@ -17,7 +17,7 @@ To compile this program follow these steps:
 3. To improve its performance one can use `-O1` or `-O2` or `-O3`
 
 ## Run
-To run the program use `./SFLA {a dataset name}`
+To run the program use `./SFLA /Data/{a dataset name}OK.csv {number of acceptable stalled} {number of threads} {maximum iteration}`
 
 All datasets are stored in *Data* folder and originally adopted from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
 
