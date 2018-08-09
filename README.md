@@ -12,7 +12,7 @@ A long version of the paper can be accessed in [A Fuzzy-Rough based Binary Shuff
 ## Compile
 To compile this program follow these steps:
 
-1. Be sure that you have the latest GCC/G++ compiler installed
+1. Be sure that you have the latest [GCC/G++ compiler](https://gcc.gnu.org/) and [Java](https://www.java.com/en/) installed
 2. Use `g++ -o SFLA main.cpp clsWeka.cpp clsData.cpp -std=c++11 -Iinclude -pthread` to compile the program
 3. To improve its performance one can use `-O1` or `-O2` or `-O3`
 
